@@ -1,0 +1,157 @@
+.header {
+    text-align: center;
+    background-color: #788F58;
+    color: white;
+}
+
+#naslov{
+    font-size: 32px;
+    padding-top: 18px;
+    margin-bottom: 0;
+}
+
+#podnaslov{
+    margin-top:0;
+    padding-bottom: 18px;
+}
+
+.MyContainer {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+#telo{
+    width: 70%;
+    margin: auto;
+}
+
+#left{
+    text-align: right;
+}
+
+#education{
+    font-weight: 600;
+}
+
+#right{
+    text-align: left;
+}
+
+ul{
+    list-style: none;
+}
+
+.navmenu ul{
+    margin-left:25%;
+    position: relative;
+}
+
+.navmenu ul::after {
+    content:"";
+    position: absolute;
+    width: 3px;
+    height: calc(100% - 58px);
+    left:40px;
+    top:0;
+    background: #ccceca;
+    z-index: -1;
+}
+
+.navmenu ul li{
+    padding:30px 0;
+}
+
+.navmenu ul li a::before{
+    content: "";
+    position: absolute;
+    background: #788F58;
+    width: 12px;
+    height: 12px;
+    left: 35px;
+    transform: translateY(-50%);
+    border-radius: 20px;
+}
+
+
+.roman {
+    list-style-type: square;
+}
+
+
+.animated-progress {
+    width: 300px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: rgb(196, 196, 196);
+    margin-bottom: 25px;
+    margin-top: 5px;
+    border: 0px;
+    overflow: hidden;
+    position: relative;
+    padding-left: 0px !important;
+  }
+
+  .animated-progress span {
+    height: 100%;
+    display: block;
+    color: rgb(255, 251, 251);
+    line-height: 30px;
+    position: absolute;
+    text-align: end;
+    padding-right: 5px;
+    background-color: #788F58;
+  }
+
+
+  .vline {
+    border-top: 3px solid;
+    border-color:#ccceca;
+  }
+
+
+  .test::after {
+    content:"";
+    position: absolute;
+    width: 80px;
+    height: 3px;
+    right:-142px;
+    top:28px;
+    background: #ccceca;
+    z-index: -1;
+  }
+
+  .test2::after {
+    content:"";
+    position: absolute;
+    width: 80px;
+    height: 3px;
+    right:-142px;
+    top:148px;
+    background: #ccceca;
+    z-index: -1;
+  }
+
+  .test3::after {
+    content:"";
+    position: absolute;
+    width: 50px;
+    height: 3px;
+    right:-110px;
+    top:264px;
+    background: #ccceca;
+    z-index: -1;
+  }
+
+
+  .test4::after {
+    content:"";
+    position: absolute;
+    width: 50px;
+    height: 3px;
+    right:-110px;
+    top:594px;
+    background: #ccceca;
+    z-index: -1;
+  }
