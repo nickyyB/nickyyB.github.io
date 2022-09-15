@@ -88,7 +88,7 @@
     content:"";
     position: absolute;
     width: 3px;
-    height: 750px;
+    height: 800px;
     left:50%;
     top:10px;
     background: gray;
@@ -140,5 +140,13 @@
 
     .right-title::after{
         display: none;
+    }
+
+    #left-section{
+        text-align: center;
+    }
+
+    #right-section{
+        text-align: center;
     }
   }
