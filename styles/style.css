@@ -1,82 +1,98 @@
-.header {
+.header{
+    width: 100%;
     text-align: center;
+    color:white;
     background-color: #788F58;
-    color: white;
 }
 
-#naslov{
-    font-size: 32px;
+#central-title{
+    font-size: 24px;
     padding-top: 18px;
-    margin-bottom: 0;
 }
 
-#podnaslov{
-    margin-top:0;
+#subtitle{
     padding-bottom: 18px;
 }
 
-.MyContainer {
-    margin-top: 15px;
-    margin-bottom: 15px;
-    margin-left: 15px;
-    margin-right: 15px;
-}
-
-#telo{
-    width: 70%;
-    margin: auto;
-}
-
-#left{
+#left-section{
     text-align: right;
+}
+
+#right-section{
+    text-align: left;
+}
+
+.left-title{
+    position: relative;
+    font-weight: 700;
+}
+
+.right-title{
+    position: relative;
+    font-weight: 700;
+}
+
+.left-title::after{
+    content:"";
+    height: 3px;
+    width: 5%;
+    top:50%;
+    left:120%;
+    position: absolute;
+    background: gray;
+}
+
+.left-title::before{
+    content: "";
+    position: absolute;
+    background: #788F58;
+    width: 12px;
+    height: 12px;
+    top:50%;
+    right:-26.5%;
+    transform: translateY(-50%);
+    border-radius: 20px;
+}
+
+.right-title::before{
+    content:"";
+    height: 3px;
+    width: 5%;
+    top:50%;
+    left:-25%;
+    position: absolute;
+    background: gray;
+}
+
+.right-title::after{
+    content: "";
+    position: absolute;
+    background: #788F58;
+    width: 12px;
+    height: 12px;
+    top:50%;
+    left:-26%;
+    transform: translateY(-50%);
+    border-radius: 20px;
 }
 
 #education{
     font-weight: 600;
 }
 
-#right{
-    text-align: left;
-}
-
-ul{
-    list-style: none;
-}
-
-.navmenu ul{
-    margin-left:25%;
+#middle-section{
     position: relative;
 }
 
-.navmenu ul::after {
+#middle-section::after{
     content:"";
     position: absolute;
     width: 3px;
-    height: calc(100% - 58px);
-    left:40px;
-    top:0;
-    background: #ccceca;
+    height: 750px;
+    left:50%;
+    top:10px;
+    background: gray;
     z-index: -1;
-}
-
-.navmenu ul li{
-    padding:30px 0;
-}
-
-.navmenu ul li a::before{
-    content: "";
-    position: absolute;
-    background: #788F58;
-    width: 12px;
-    height: 12px;
-    left: 35px;
-    transform: translateY(-50%);
-    border-radius: 20px;
-}
-
-
-.roman {
-    list-style-type: square;
 }
 
 
@@ -105,53 +121,24 @@ ul{
   }
 
 
-  .vline {
-    border-top: 3px solid;
-    border-color:#ccceca;
-  }
+  @media (max-width:990px){
+    #middle-section{
+        display:none;
+    }
 
+    .left-title::after{
+        display: none;
+    }
 
-  .test::after {
-    content:"";
-    position: absolute;
-    width: 80px;
-    height: 3px;
-    right:-142px;
-    top:28px;
-    background: #ccceca;
-    z-index: -1;
-  }
+    .left-title::before{
+        display: none;
+    }
 
-  .test2::after {
-    content:"";
-    position: absolute;
-    width: 80px;
-    height: 3px;
-    right:-142px;
-    top:148px;
-    background: #ccceca;
-    z-index: -1;
-  }
+    .right-title::before{
+        display: none;
+    }
 
-  .test3::after {
-    content:"";
-    position: absolute;
-    width: 50px;
-    height: 3px;
-    right:-110px;
-    top:264px;
-    background: #ccceca;
-    z-index: -1;
-  }
-
-
-  .test4::after {
-    content:"";
-    position: absolute;
-    width: 50px;
-    height: 3px;
-    right:-110px;
-    top:594px;
-    background: #ccceca;
-    z-index: -1;
+    .right-title::after{
+        display: none;
+    }
   }

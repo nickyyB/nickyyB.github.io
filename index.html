@@ -7,101 +7,78 @@
     <title>Landing Page - Nikola Brkovic</title>
     <link rel="stylesheet" href="styles\style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <body>
-    <div class="MyContainer">
+    
+    <div class="container">
+        <!--HEADER-->
         <div class="header">
-            <p id="naslov">Nikola Brković</p>
-            <p id="podnaslov">Junior Software Engineer</p>
+            <p id="central-title">Nikola Brković</p>
+            <p id="subtitle">Junior Software Engineer</p>
         </div>
-        <div class="row" id="telo">
-            <div class="col-sm-5" id="left">
-                <div class="test">
-                    <h3>SUMMARY</h3>
+
+
+        <!--TIMELINE SECTION-->
+        <div class="col-md-12">
+            <!--LEFT SECTION-->
+            <div class="col-md-5" id="left-section">
+
+                <!--SUMMARY-->
+                <div class="left-content">
+                    <h3 class="left-title">SUMMARY</h3>
                     <p>
-                    Creative and hardworking final year student of software engineering. Always ready for improving and learning. Interested in sports, cars and mechanics.
+                        Creative and hardworking final year student of software engineering. Always ready for improving and learning. Interested in sports, cars and mechanics.
                     </p>
                 </div>
-                <div style="padding-top: 10px" class="test2">
-                    <h3>EDUCATION</h3>
+
+                <!--EDUCATION-->
+                <div class="left-content">
+                    <h3 class="left-title">EDUCATION</h3>
                     <p id="education">
                         Ongoing<br>
                         School of Electrical engineering<br>
                         University of Belgrade
                     </p>
                 </div>
-                <div class="test3">
-                    <h3>RELEVANT SKILLS</h3>
-                    <div>
-                        <div class="row">
-                            <div class="col-sm-3">
-                                Java | PHP 
-                            </div>
-                            <div class="animated-progress col-sm-7">
-                                <span style="width: 60%;"></span>
-                            </div>
-                            <div class="col-sm-2">60%</div>
-                        </div>
-                        <div class="row">
-                            <div class="col-sm-3">
-                                SQL | GIT
-                            </div>
-                            <div class="animated-progress col-sm-7">
-                                <span style="width: 60%;"></span>
-                            </div>
-                            <div class="col-sm-2">60%</div>
-                        </div>
-                        <div class="row">
-                            <div class="col-sm-3">
-                                JS | Selenium
-                            </div>
-                            <div class="animated-progress col-sm-7">
-                                <span style="width: 50%;"></span>
-                            </div>
-                            <div class="col-sm-2">50%</div>
-                        </div>
-                        <div class="row">
-                            <div class="col-sm-3">
-                                HTML | CSS
-                            </div>
-                            <div class="animated-progress col-sm-7">
-                                <span style="width: 50%;"></span>
-                            </div>
-                            <div class="col-sm-2">50%</div>
-                        </div>
-                        <div class="row">
-                            <div class="col-sm-3">
-                                C | C++
-                            </div>
-                            <div class="animated-progress col-sm-7">
-                                <span style="width: 40%;"></span>
-                            </div>
-                            <div class="col-sm-2">40%</div>
-                        </div>
-                        <div class="row">
-                            <div class="col-sm-3">
-                                Python
-                            </div>
-                            <div class="animated-progress col-sm-7">
-                                <span style="width: 50%;"></span>
-                            </div>
-                            <div class="col-sm-2">50%</div>
-                        </div>
-                        <div class="row">
-                            <div class="col-sm-3">
-                                WordPress
-                            </div>
-                            <div class="animated-progress col-sm-7">
-                                <span style="width: 60%;"></span>
-                            </div>
-                            <div class="col-sm-2">60%</div>
-                        </div>
+
+                <!--SKILLS-->
+                <div class="left-content">
+                    <h3 class="left-title">RELEVANT SKILLS</h3>
+                    <div class="row">
+                        <div class="col-sm-4">JAVA &bull; PHP </div>
+                        <div class="animated-progress col-sm-7"> <span style="width: 60%;"></span></div>
+                        <div class="col-sm-1">60%</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4">SQL &bull; GIT </div>
+                        <div class="animated-progress col-sm-7"> <span style="width: 60%;"></span></div>
+                        <div class="col-sm-1">60%</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4">JS &bull; Selenium </div>
+                        <div class="animated-progress col-sm-7"> <span style="width: 60%;"></span></div>
+                        <div class="col-sm-1">60%</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4">HTML &bull; CSS </div>
+                        <div class="animated-progress col-sm-7"> <span style="width: 60%;"></span></div>
+                        <div class="col-sm-1">60%</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4">C &bull; C++ </div>
+                        <div class="animated-progress col-sm-7"> <span style="width: 60%;"></span></div>
+                        <div class="col-sm-1">60%</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4">Python</div>
+                        <div class="animated-progress col-sm-7"> <span style="width: 60%;"></span></div>
+                        <div class="col-sm-1">60%</div>
                     </div>
                 </div>
-                <div class="test4">
-                    <h3>PROJECTS</h3>
+
+                <!--PROJECTS-->
+                <div class="left-content">
+                    <h3 class="left-title">PROJECTS</h3>
                     <p id="education">
                         <p>
                             <b>SEP 2022 - API Project</b> - API for web store implemented using Python (Flask), SQLAlchemy, Docker, Swarm.
@@ -115,28 +92,24 @@
                         <p>
                             <b>AVG 2020 - Java Game</b> - Java 2D single player game with tanks, cannons and coins. Multiple settings including number of coins, tanks, additional lives, difficulties, etc. 
                          </p>
-                    </p>
                 </div>
             </div>
-            <div class="col-sm-2" id="central">
-                <nav class="navmenu">
-                    <ul>
-                        <li style="padding-bottom:90px"><a href="#" class="active"></a></li>
-                        <li style="padding-bottom:85px"><a href="#"></a></li>
-                        <li style="padding-bottom:300px"><a href="#"></a></li>
-                        <li style="padding-bottom:300px"><a href="#"></a></li>
-                    </ul>
-                </nav>
+
+            <!--MIDDLE SECTION-->
+            <div class="col-md-2" id="middle-section">
+
             </div>
-            <div class="col-sm-5" id="right">
-                <div>
-                    <h3>CONTACT</h3>
-                    <b>GitHub:</b> @nickyyB <br>
+
+            <!--RIGHT SECTION-->
+            <div class="col-md-5" id="right-section">
+                <div class="right-content">
+                    <h3 class="right-title">CONTACT</h3>
+                    <b>GitHub:</b> <a href="https://github.com/nickyyB">@nickyyB </a><br>
                     <b>Email:</b> nikola.brkovic@yahoo.com <br>
                     <b>LinkedIn:</b> linkedin.com/in/xxx/
                 </div>
-                <div>
-                    <h3>PROFESSIONAL EXPERIENCE</h3>
+                <div class="right-content">
+                    <h3 class="right-title">PROFESSIONAL EXPERIENCE</h3>
                     <b>SEP 2022–Present</b><br>
                     <b>IT Consultant | Junior Software Engineer</b><br>
                     <b>Prodyna Belgrade</b>
@@ -171,7 +144,10 @@
                     </p>
                 </div>
             </div>
-        </div> 
+        </div>
+
     </div>
+    
+
 </body>
 </html>
