@@ -1,0 +1,168 @@
+.header{
+    width: 100%;
+    text-align: center;
+    color:white;
+    background-color: #a0c52a;
+}
+
+#central-title{
+    font-size: 24px;
+    padding-top: 18px;
+}
+
+#subtitle{
+    padding-bottom: 18px;
+}
+
+#left-section{
+    text-align: right;
+}
+
+#right-section{
+    text-align: left;
+}
+
+.left-title{
+    position: relative;
+    font-weight: 700;
+}
+
+.right-title{
+    position: relative;
+    font-weight: 700;
+}
+
+.left-title::after{
+    content:"";
+    height: 3px;
+    width: 10%;
+    top:50%;
+    left:116%;
+    position: absolute;
+    background: rgb(196, 196, 196);
+    z-index: -1;
+}
+
+.left-title::before{
+    content: "";
+    position: absolute;
+    background: #a0c52a;
+    width: 12px;
+    height: 12px;
+    top:50%;
+    right:-26.5%;
+    transform: translateY(-50%);
+    border-radius: 20px;
+}
+
+.right-title::before{
+    content:"";
+    height: 3px;
+    width: 10%;
+    top:50%;
+    left:-25%;
+    position: absolute;
+    background: rgb(196, 196, 196);
+}
+
+.right-title::after{
+    content: "";
+    position: absolute;
+    background: #a0c52a;
+    width: 12px;
+    height: 12px;
+    top:50%;
+    left:-26%;
+    transform: translateY(-50%);
+    border-radius: 20px;
+}
+
+#education{
+    font-weight: 600;
+}
+
+#middle-section{
+    position: relative;
+}
+
+#middle-section::after{
+    content:"";
+    position: absolute;
+    width: 3px;
+    height: 800px;
+    left:50%;
+    top:10px;
+    background: rgb(196, 196, 196);
+    z-index: -1;
+}
+
+
+.animated-progress {
+    height: 10px;
+    border-radius: 5px;
+    background-color: rgb(196, 196, 196);
+    margin-bottom: 25px;
+    margin-top: 5px;
+    border: 0px;
+    overflow: hidden;
+    position: relative;
+    padding-left: 0px !important;
+  }
+
+  .animated-progress span {
+    height: 100%;
+    display: block;
+    color: rgb(255, 251, 251);
+    line-height: 30px;
+    position: absolute;
+    text-align: end;
+    padding-right: 5px;
+    background-color: #a0c52a;
+  }
+
+
+  @media (max-width:990px){
+    #middle-section{
+        display:none;
+    }
+
+    .left-title::after{
+        display: none;
+    }
+
+    .left-title::before{
+        display: none;
+    }
+
+    .right-title::before{
+        display: none;
+    }
+
+    .right-title::after{
+        display: none;
+    }
+
+    #left-section{
+        text-align: center;
+    }
+
+    #right-section{
+        text-align: center;
+    }
+  }
+
+
+  @media(max-width:1199px){
+    .left-title::before{
+        right:-28%;
+    }
+
+    .right-title::after{
+        left:-27.35%;
+    }
+  }
+
+  .picture img{
+    width: 50%;
+    height: 50%;
+  }
